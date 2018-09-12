@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+
+<head>
+    <meta charset="utf-8">
+    <title>San Diego Top Spots</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+            /* Set the size of the div element that contains the map */
+           #map {
+             height: 400px;  /* The height is 400 pixels */
+             width: 100%;  /* The width is the width of the web page */
+            }
+         </style>
+</head>
+
+<body>
+    <!-- Write your markup here -->
+
+    <div id="map"></div>
+
+    <div class="container-fluid">
+            
+            <h1 class="h1 text-center">San Diego Top Spots</h1>
+            
+            <!--Table here-->
+            <table id="table" class="table table-bordered table-hover">
+                <tr>
+                    <th class="th-light span2">Name</th>
+                    <th class="th-light span4">Description</th>
+                    <th class="th-light span2">Link</th>
+                </tr>
+            </table>
+
+    </div>
+
+    <!-- Don't forget to add your <script> tag here -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRloIQ0X1H3ozSabKUMw36xbHqpFkGYl0&callback=initMap"
+    async defer></script>
+    <script src="main.js" charset="utf-8"></script>
+</body>
+</html>
